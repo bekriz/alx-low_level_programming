@@ -5,16 +5,17 @@
 
 /*this programs take a randum nuber from a user and tells wehter is postive,zero or negative */
 int main(void)
+
 {
 	int n;
-	srand(time(NULL));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if(n > 0){
-		printf("%d\tis Posetive",n);
+		printf("%d\tis Positive", n);
 	}else if(n == 0){
-		printf("%d\tis Zero",n);
-	}else {
-		printf("%d\tis Negative",n);
-	}
+		printf("%d\tis Zero", n);
+	}else 
+		printf("%d\tis Negative", n);
+	
 	return (0);
 }
